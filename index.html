@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="KO/knockout.js"></script>
+    <title>Walks</title>
+  </head>
+  <body>
+    <div id="knockout-app" class="card">
+      <header>Good Walks Inc.</header>
+      <div class="card-section">
+        <h2>Hello, <span data-bind="text: userName"></span></h2>
+        <p>How many walks will we take today?</p>
+        <div class="counter-ui-container">
+          <button data-bind="click: decrease">-</button>
+          <span class="counter" data-bind="text: count">0</span>
+          <button data-bind="click: increase">+</button>
+        </div>
+        <p>You are <span data-bind="text: yourStatus"></span></p>
+      </div>
+      <footer>
+        <span>Have a nice day!</span>
+      </footer>
+    </div>
+  </body>
+</html>
